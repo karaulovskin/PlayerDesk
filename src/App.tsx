@@ -1,13 +1,14 @@
 import React from 'react';
-import cn from 'classnames';
+import PlayControls from './components/PlayControls/PlayControls';
 
 import s from './App.module.scss';
-import './custom.css';
 
 const App = () => {
-  console.log('###: Some log');
-
-  return <div className={cn(s.header, 'red')}>This is App</div>;
+  return (
+    <div className={s.App}>
+      <PlayControls />
+    </div>
+  );
 };
 
 export default App;
